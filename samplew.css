@@ -1,0 +1,264 @@
+.leftNav,.midNav,.navbar,.navLogo,.section1,.section2,.section3,.ssc2img1,.ssc2img2,.ssc2img3,.ssc3img1,.ssc3img2,.ssc3img3,.ssc3img4,.ssc3img5{
+    background-color: bisque;
+}
+body{
+    margin: 0;
+}
+h2,p{
+  padding: 0;
+  margin: 0;
+}
+.container {  display: grid;
+    height: 100vh;
+
+    /* grid-template-columns: 0.2fr 2.6fr 0.2fr;  */
+    grid-template-rows: 0.3fr 1.7fr repeat(2, 1fr);
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      ". section1 ."
+      ". section2 ."
+      ". section3 .";
+}
+  
+  .navbar {  display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 0.6fr 1.8fr 0.6fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "navLogo midNav leftNav"
+      ". . .";
+    grid-area: navbar;
+  }
+  
+  .navLogo { grid-area: navLogo;
+    display: grid;
+    justify-content: center; 
+    align-content: center;
+  }
+  
+  .midNav { grid-area: midNav; 
+    display: grid;
+    justify-content: center; 
+    align-content: center;
+
+  }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+  
+  .leftNav { grid-area: leftNav; }
+  
+  .section1 {  display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr; 
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". subSection1 ."
+      ". . .";
+    grid-area: section1;
+  }
+  
+  .subSection1 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "ssContent1 ssContent1 ssImg1"
+      ". . .";
+    grid-area: subSection1;
+  }
+  
+  .ssContent1 { grid-area: ssContent1; 
+    display: grid;
+    justify-content: center;
+    align-content: center;}
+  
+  .ssImg1 { grid-area: ssImg1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+/* .img1resp{
+  width: 100%;
+  max-width: 395px;
+  height: auto;
+
+} */
+
+
+  @media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+    .section1 {
+      display: grid; 
+      grid-template-columns: 0.2fr 2.6fr 0.2fr; 
+      grid-template-rows: 0.3fr 2.4fr 0.3fr; 
+      gap: 5px 5px; 
+      grid-template-areas: 
+        ". . ."
+        ". subSection1 ."
+        ". . ."; 
+      grid-area: section1; 
+    }
+    .subSection1 {
+      display: grid; 
+      grid-template-columns: 1.1fr 2.5fr 0.8fr; 
+      grid-template-rows: 1.4fr 1.1fr; 
+      gap: 5px 5px; 
+      grid-template-areas: 
+        ". ssImg1 ."
+        ". ssContent1 ."; 
+      grid-area: subSection1; 
+    }
+    .ssImg1 { grid-area: ssImg1; 
+    width: 100%;}
+    .ssContent1 { grid-area: ssContent1; }
+  }
+  
+  .section2 {  display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr; 
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". subSection2 ."
+      ". . .";
+    grid-area: section2;
+  }
+  
+  .subSection2 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ssContent2 ssContent2 ssContent2"
+      "ssc2img1 ssc2img2 ssc2img3"
+      "ssc2img1 ssc2img2 ssc2img3";
+    grid-area: subSection2;
+  }
+  
+  .ssContent2 { grid-area: ssContent2;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .ssContent2 h2{
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+  }
+  
+  .ssc2img1 { grid-area: ssc2img1;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+  #sixhundred{
+    float: left;
+  }
+  
+  .ssc2img2 { grid-area: ssc2img2;
+    display: grid;
+    justify-content: center;
+    align-content: center;  }
+  
+  .ssc2img3 { grid-area: ssc2img3;
+    display: grid;
+    justify-content: center;
+    align-content: center;  }
+  
+  .section3 {  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". subSection3 ."
+      ". . .";
+    grid-area: section3;
+  }
+  
+  .subSection3 {  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ssContent3 ssContent3 ssContent3 ssContent3 ssContent3"
+      "ssc3img1 ssc3img2 ssc3img3 ssc3img4 ssc3img5"
+      "ssc3img1 ssc3img2 ssc3img3 ssc3img4 ssc3img5";
+    grid-area: subSection3;
+  }
+  
+  .ssContent3 { grid-area: ssContent3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+
+    .ssContent3 h2{
+      display: grid;
+      justify-content: center;
+      align-content: center; 
+    }
+  
+  .ssc3img1 { grid-area: ssc3img1;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+ }
+  
+  .ssc3img2 { grid-area: ssc3img2;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;  }
+  
+  .ssc3img3 { grid-area: ssc3img3;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+  
+  .ssc3img4 { grid-area: ssc3img4;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;  }
+  
+  .ssc3img5 { grid-area: ssc3img5;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-content: center;  }
+  

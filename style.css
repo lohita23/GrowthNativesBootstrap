@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    color: white;
+}
+img#logo{
+    margin-left: 100px;
+}
+form.d-flex {
+    margin-right: 100px;
+}
+button.btn.btn-dark {
+    margin-right: 10px;
+}
+.btn{
+  border: 2px solid white;  
+  border-radius: 26px;
+}
+a.nav-link.active {
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+}
+
+button#search {
+    border: rgb(102, 102, 102);
+    background: rgb(38,38,38);
+}
+.bg-dark {
+    background-color: rgb(0 0 0)!important;
+}
+a.nav-link.active{
+    border: rgb(102, 102, 102);
+    background: rgb(38,38,38);
+    border-radius: 1.25rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffff;
+}
+
+span.line1{
+    background: rgb(0,126,191);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    /* margin: 10px auto; */
+    align-items: center;
+    margin-left: 25px;
+}
+
+#bb{
+    margin-left: 20px;
+}
+#bb:hover{
+    border: 2px solid rgb(0,126,191);
+    background-color: rgb(0,126,191);
+}
+.mx-auto{
+    margin-top: 40px;
+}
+.container.section {
+    text-align: center;
+}
+section.section.section_white_bg {
+    background-color: white;
+    color: black;
+}
+button#bb {
+    border-radius: 26px;
+}
+.section {
+    padding: 80px 0;
+}
+.section.section_grey_bg{
+    background-color: #1e1e1e;
+}
+
